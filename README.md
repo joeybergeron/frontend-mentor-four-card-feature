@@ -15,4 +15,5 @@ Users should:
 
 - View the optimal layout for the site depending on their device's screen size
 
-**Lets Do This!** 🚀
+**View the live final!** 🚀
+[Frontend Four Card Feature Section Challenge Live](https://hopeful-tereshkova-b72d08.netlify.com/)
