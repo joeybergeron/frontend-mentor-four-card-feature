@@ -1,0 +1,179 @@
+// ===================================== COLORS
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$darkblue: hsl(234, 12%, 34%);
+$grayblue: hsl(229, 6%, 66%);
+$body-background: hsl(0, 0%, 98%);
+$boxshadow: hsl(213, 39%, 89%);
+$cardbackground: hsl(0, 0%, 100%);
+
+
+
+// ===================================== DEFAULTS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    outline: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: $body-background;
+}
+
+
+
+// ===================================== FONTS
+/* poppins-200 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Poppins ExtraLight'), local('Poppins-ExtraLight'),
+        url('../fonts/poppins-v9-latin-200.woff2') format('woff2'),
+        url('../fonts/poppins-v9-latin-200.woff') format('woff');
+}
+/* poppins-regular - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'),
+        url('../fonts/poppins-v9-latin-regular.woff2') format('woff2'),
+        url('../fonts/poppins-v9-latin-regular.woff') format('woff');
+}
+/* poppins-600 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
+        url('../fonts/poppins-v9-latin-600.woff2') format('woff2'),
+        url('../fonts/poppins-v9-latin-600.woff') format('woff');
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 200;
+    line-height: 3.2rem;
+    color: $darkblue;
+
+    strong {
+        font-weight: 600;
+    }
+}
+
+h2 {
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
+    color: $darkblue;
+}
+
+p {
+    font-size: 1rem;
+    color: $grayblue;
+    margin-top: 1em;
+}
+
+
+
+// ===================================== HEADER
+header {
+    margin: 4.9rem auto 3.5rem auto;
+    text-align: center;
+
+    p {
+        margin-top: 1.1em;
+    }
+}
+
+
+
+// ===================================== CONTAINER / CARDS
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 550px;
+    margin: auto;
+
+    .col {
+        display: flex;
+        flex-direction: column;
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 250px;
+            width: 350px;
+            margin: auto 20px;
+            padding: 2em;
+            border-radius: 6px;
+            background-color: $cardbackground;
+
+            &:after {
+                content: "";
+                position: absolute;
+                display: flex;
+                align-self: center;
+                width: 90%;
+                height: 200px;
+                transform: translateY(28px);
+                z-index: -1;
+                background-color: $boxshadow;
+                filter: blur(10px);
+            }
+
+            p {
+                font-size: 0.8rem;
+                line-height: 1.45rem;
+                margin-top: 0.55em;
+            }
+        }
+    }
+
+
+    .supervisor {
+        border-top: 4px solid $cyan;
+    }
+    .teambuilder {
+        border-top: 4px solid $red;
+    }
+    .karma {
+        border-top: 4px solid $orange;
+    }
+    .calculator {
+        border-top: 4px solid $blue;
+    }
+
+    img {
+        align-self: flex-end;
+        margin-top: auto;
+    }
+}
+
+
+
+
+
+
+// ===================================== FOOTER
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a { 
+        color: hsl(228, 45%, 44%);
+    }
+}

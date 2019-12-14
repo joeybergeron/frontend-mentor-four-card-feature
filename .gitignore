@@ -1,5 +1,15 @@
-# Created by https://www.gitignore.io/api/macos
-# Edit at https://www.gitignore.io/?templates=macos
+# Created by https://www.gitignore.io/api/macos,codekit
+# Edit at https://www.gitignore.io/?templates=macos,codekit
+
+### CodeKit ###
+# General CodeKit files to ignore
+config.codekit
+config.codekit3
+/min
+
+### CodeKit Patch ###
+*/codekit-config.json
+.codekit-cache
 
 ### macOS ###
 # General
@@ -29,4 +39,4 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# End of https://www.gitignore.io/api/macos
+# End of https://www.gitignore.io/api/macos,codekit
